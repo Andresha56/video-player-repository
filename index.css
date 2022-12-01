@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#img-con {
+  position: relative;
+}
+body {
+  background-color: #1b1b1b;
+  width: 100%;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+hgroup {
+  text-align: center;
+  margin-bottom: 30px;
+}
+hgroup h1 {
+  font-weight: 400;
+  font-size: 50px;
+}
+hgroup h2 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+span {
+  color: rgb(234, 226, 76);
+}
+
+#img-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+  width: 80%;
+}
+#top-img-sec {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.img-div {
+  height: 110px;
+}
+.img-div img,
+.bottom-img img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+}
+#F-img {
+  grid-column: 1/3;
+  grid-row: 1/4;
+  height: 350px;
+  position: relative;
+}
+#playVideo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color:rgba(0,0,0,0.7); 
+  display: none;
+}
+#playVideo #Video-con {
+  height: 90%;
+  width: 700px;
+  margin: auto;
+  margin-top: 25px;
+
+}
+.close-video-btn {
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#playVideo iframe {
+  height: 100%;
+  width: 100%;
+}
+#content-info {
+  position: absolute;
+  bottom: 0;
+}
+#content-info div {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+#content-info div button {
+  padding: 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: rgb(234, 226, 76);
+  border: 0;
+  border-radius: 2px;
+}
+#buttom-img-sec {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.bottom-img {
+  height: 150px;
+  position: relative;
+}
+.btnImg-info {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.btnImg-info div {
+  padding: 20px 10px;
+}
+.btnImg-info h1 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.btnImg-info p {
+  font-size: 14px;
+}
+.bottom-img:hover .btnImg-info {
+  display: block;
+  transition: all 0.7s ease;
+}
